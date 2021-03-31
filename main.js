@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const fetch = require('node-fetch');
 const fs = require('fs');
 
-const token = '1797490881:AAEi_SC4yOC924eevsx8yrTZ4nfjsb0oRyY'
+const token = process.env.TOKEN;
 const bot = new TelegramBot(token, {polling: true});
 
 
