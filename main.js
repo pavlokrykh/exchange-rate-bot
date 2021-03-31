@@ -145,7 +145,6 @@ const historyGraph = async (history, cur) => {
     const imageBuffer = await chartJSNodeCanvas.renderToBuffer(configuration);
 
     fs.writeFileSync('mychart.png', imageBuffer);
-
 };
 
 
